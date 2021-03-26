@@ -3,7 +3,7 @@ from rdflib import Graph
 import time
 
 from werkzeug.exceptions import RequestHeaderFieldsTooLarge
-app = Flask(__name__, static_folder='../build', static_url_path='/')
+app = Flask(__name__, static_folder='./build', static_url_path='/')
 
 g = Graph()
 g.parse("./data/out.ttl", format="turtle")
