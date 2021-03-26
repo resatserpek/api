@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, Response
 from rdflib import Graph
 import time
 
@@ -12,10 +12,12 @@ g.parse("./data/out.ttl", format="turtle")
 def index():
     return app.send_static_file('index.html') 
 
-
-@app.route('/api/time')
+# source: https://stackoverflow.com/questions/40246702/displaying-a-txt-file-in-my-html-using-python-flask
+@app.route('/api/file')
 def home():
-    return{'time': time.time()} 
+    with open('./data/out.ttl', 'r') as f:
+        content = f.read()
+    return Response(content, mimetype='text/plain')
 
 @app.route('/api/trading')
 def trading():
