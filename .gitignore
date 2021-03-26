@@ -10,7 +10,6 @@ canvasjs-3.2.11
 /coverage
 
 # production
-/build
 
 # misc
 .DS_Store
