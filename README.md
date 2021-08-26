@@ -8,3 +8,9 @@ Data visualisation project using Covid Retention Scheme data. For producing visu
 
 ## Check the live version
 Application is live in https://rs7g15-coursework.herokuapp.com/. You can also check the turtle file, graph data format used, in https://rs7g15-coursework.herokuapp.com/api/file 
+
+## Open Data Inovation Coursework 2
+You can also check second coursework for this module in the following link below:
+https://innovation-cw2.herokuapp.com/
+
+The second project was a group project. Source code is available on request.
